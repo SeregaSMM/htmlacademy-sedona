@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Hotels</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="logo"><img src="http://placehold.it/138x70" alt="logo" width="138" height="70">
+        <nav class="nav-main">
+          <ul class="nav-main__list">
+            <li class="nav-main__item"><a href="#" class="nav-main__link"></a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link"></a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link"></a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="filter">
+        <!--Вопрос по форме!-->
+        <form>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <label for="infra1">
+              <input type="checkbox" id="infra1" name="infra1">Бассейн
+            </label>
+            <label for="infra2">
+              <input type="checkbox" id="infra2" name="infra2">Парковка
+            </label>
+            <label for="infra3">
+              <input type="checkbox" id="infra3" name="infra">Wi-Fi
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <label for="type1">
+              <input type="checkbox" id="type1" name="type1">Гостиница
+            </label>
+            <label for="type2">
+              <input type="checkbox" id="type2" name="type2">Мотель
+            </label>
+            <label for="type3">
+              <input type="checkbox" id="type3" name="type3">Апартаменты
+            </label>
+          </fieldset>
+          <fieldset class="filter__price">
+            <input type="range" name="price" min="0" max="100">
+            <button type="submit" value="Показать"></button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="result">
+        <div class="result__header">
+          <div class="result__quantity">Найдено: 3</div>
+          <div class="result__sort-type">Сортировка:
+            <ul class="sort-type__list">
+              <li class="sort-type__item"><a href="#" class="sort-type__link">По цене</a></li>
+              <li class="sort-type__item"><a href="#" class="sort-type__link">По типу</a></li>
+              <li class="sort-type__item"><a href="#" class="sort-type__link">По рейтингу</a></li>
+            </ul>
+          </div>
+          <i class="sort-type__icon--up"></i>
+          <i class="sort-type__icon--down is-active"></i>
+        </div>
+        <div class="result__content">
+          <div class="item-result">
+            <div class="item-result__thumbnail">
+              <img src="http://placehold.it/135x90" alt="thumbnail" width="135" height="90"></div>
+            <div class="item-result__main">
+              <div class="result__title">Amara Resort & Spa</div>
+              <dl class="result__meta">
+                <dt>Гостиница</dt>
+                <dd>от 3500 р.</dd>
+              </dl>
+              <a href="#" class="btn--blue">Подробнее</a>
+              <a href="#" class="btn">Забронировать</a>
+            </div>
+            <div class="item-result__rating pull-right">
+              <div class="rating__stars">
+                <i class="s1"></i>
+                <i class="s2"></i>
+                <i class="s3"></i>
+                <i class="s4"></i>
+                <i class="s5"></i>
+              </div>
+              <div class="rating__num">
+                Рейтинг: 8,5
+              </div>
+            </div>
+          </div>
+          <div class="item-result">
+            <div class="item-result__thumbnail">
+              <img src="http://placehold.it/135x90" alt="thumbnail" width="135" height="90"></div>
+            <div class="item-result__main">
+              <div class="result__title">Desert Quail Inn</div>
+              <dl class="result__meta">
+                <dt>Мотель</dt>
+                <dd>от 2000 р.</dd>
+              </dl>
+              <a href="#" class="btn--blue">Подробнее</a>
+              <a href="#" class="btn">Забронировать</a>
+            </div>
+            <div class="item-result__rating pull-right">
+              <div class="rating__stars">
+                <i class="s1"></i>
+                <i class="s2"></i>
+                <i class="s3"></i>
+                <i class="s4"></i>
+                <i class="s5"></i>
+              </div>
+              <div class="rating__num">
+                Рейтинг: 8,9
+              </div>
+            </div>
+          </div>
+          <div class="item-result">
+            <div class="item-result__thumbnail">
+              <img src="http://placehold.it/135x90" alt="thumbnail" width="135" height="90"></div>
+            <div class="item-result__main">
+              <div class="result__title">Amara Resort & Spa</div>
+              <dl class="result__meta">
+                <dt>Апартаменты</dt>
+                <dd>от 4000 р.</dd>
+              </dl>
+              <a href="#" class="btn--blue">Подробнее</a>
+              <a href="#" class="btn">Забронировать</a>
+            </div>
+            <div class="item-result__rating pull-right">
+              <div class="rating__stars">
+                <i class="s1"></i>
+                <i class="s2"></i>
+                <i class="s3"></i>
+                <i class="s4"></i>
+                <i class="s5"></i>
+              </div>
+              <div class="rating__num">
+                Рейтинг: 9,2
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__hashtag">#VisitSedona</section>
+      <section class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__btn social__btn-tw"></a></li>
+          <li class="social__item"><a href="#" class="social__btn social__btn-fb"></a></li>
+          <li class="social__item"><a href="#" class="social__btn social__btn-yt"></a></li>
+        </ul>
+      </section>
+      <section class="copyright"><img src="http://placehold.it/195x39" alt="htmlacademy" width="195" height="39">
+      </section>
+    </footer>
+  </div>
+</body>
