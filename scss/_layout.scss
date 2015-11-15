@@ -1,26 +1,4 @@
-body {
-  font-size: 14px;
-  line-height: 24px;
-  color: #333;
-  font-weight: normal;
-  font-family: "PTSans Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 24px;
-  color: #000;
-  font-weight: normal;
-  font-family: "PTSans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h2 {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000;
-  font-weight: normal;
-  font-family: "PTSans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+// main: style.scss
 
 .page-header {
   min-height: 56px;
@@ -29,6 +7,7 @@ h2 {
 /*======================================
  System Grid
 =======================================*/
+
 .gl0, .gl1, .gl2, .gl3 {
   position: relative;
 }
@@ -49,42 +28,42 @@ h2 {
 
 .gl0 {
   border: 2px solid blue;
-  background: rgba(0, 0, 255, 0.1);
+  background: rgba(0, 0, 255, .1);
 }
 
 .gl0:before {
   color: #fff;
-  background: rgba(0, 0, 255, 0.9);
+  background: rgba(0, 0, 255, .9);
 }
 
 .gl1 {
   border: 2px solid green;
-  background: rgba(0, 128, 0, 0.1);
+  background: rgba(0, 128, 0, .1);
 }
 
 .gl1:before {
   color: #fff;
-  background: rgba(0, 128, 0, 0.9);
+  background: rgba(0, 128, 0, .9);
 }
 
 .gl2 {
-  border: 2px solid #ff2d52;
-  background: rgba(255, 45, 82, 0.1);
+  border: 2px solid rgb(255, 45, 82);
+  background: rgba(255, 45, 82, .1);
 }
 
 .gl2:before {
   color: #fff;
-  background: rgba(255, 45, 82, 0.9);
+  background: rgba(255, 45, 82, .9);
 }
 
 .gl3 {
-  border: 2px solid #eaff2d;
-  background: rgba(234, 255, 45, 0.1);
+  border: 2px solid rgb(234, 255, 45);
+  background: rgba(234, 255, 45, .1);
 }
 
 .gl3:before {
   color: #000;
-  background: rgba(234, 255, 45, 0.8);
+  background: rgba(234, 255, 45, .8);
 }
 
 .wrapper {
@@ -252,10 +231,10 @@ h2 {
   content: '.footer-copyright';
 }
 
-figure {
-  margin: 0;
+figure{
+    margin: 0;
 }
 
-figure img {
-  width: 100%;
+figure img{
+    width: 100%;
 }
